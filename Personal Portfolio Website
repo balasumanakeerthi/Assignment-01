@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #333333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .intro {
+            background-color: cyan;
+        }
+
+        .about {
+            background-color: magenta;
+        }
+
+        .portfolio {
+            background-color: silver;
+        }
+
+        .contact {
+            background-color: olive;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 5px 0;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello! I'm Keerthi Bala Sumana,Now I'm pusing B.Tech 3rd Year. Here you'll find information about my skills, projects, and experiences.</p>
+        
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p><strong>Education:</strong></p>
+            <ul>
+                <li>B.Tech in Computer Science Engineering, Vignan University</li>
+                <li>High School ,Little Gems Vidyasram School </li>
+            </ul>
+            <p><strong>Professional Experience:</strong></p>
+            <ul>
+                <li><strong>Intern at Intern Pe</strong> 
+                    <ul>
+                        <li>Worked on developing web applications using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborated with the development team to improve user interface and experience.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Skills:</strong></p>
+            <ul>
+                <li>Programming Languages: C,Java</li>
+                <li>Web Development: HTML, CSS</li>
+                <li>Database Management: SQL</li>
+            </ul>
+
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <p><strong>Projects:</strong></p>
+            <ul>
+                <li><strong>E-commerce Website</strong> - Developed a E-commerce website using HTML,CSS.</li>
+                <li><strong>Connect Four Game</strong> - Created a Connect Four game using HTML, CSS, and JavaScript.</li>
+            </ul>
+        </div>
+        <div id="research" class="content">
+            <h3>Research</h3>
+            <p>I am currently working on a research project focused on agriculture chatbot using machine learning.</p>
+            <p> This project involves developing algorithms to The chatbot should be accessible on devices commonly used by farmers, such as basic smartphones. Consider offering offline capabilities or low-data usage options for areas with limited internet access.</p>
+            <p>By using machine learning techniques, such as classification and regression models, I aim to improve agricultural productivity and sustainability.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+        
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields.');
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.intro {
+    background-color: #3c3cd9;
+}
+
+.about {
+    background-color: #3ad51f;
+}
+
+.portfolio {
+    background-color: #df16e9;
+}
+
+.contact {
+    background-color: #4b0202;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #332;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7e0c0c;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields.');
+        event.preventDefault();
+    }
+});
+
